@@ -80,7 +80,7 @@ Citation:
 
 ---
 
-## 💼 Why This Project Matters to Employers
+## 💼 Qualities this project shows
 
 This project demonstrates:
 
@@ -88,14 +88,6 @@ This project demonstrates:
 - 📈 **Business Intelligence Skills**: Creating professional-quality dashboards using Power BI
 - 🧠 **Analytical Thinking**: Identifying limitations in existing visualizations and improving them for better decision-making
 - 📦 **Version Control & Documentation**: Using GitHub to organize and present work in a collaborative, reproducible format
-
----
-
-## 🚀 Next Steps
-
-- Add dynamic trend analysis using DAX measures
-- Enable drillthrough functionality for per-country deep dives
-- Explore automating data refreshes using Power Query + cloud sources
 
 ---
 
