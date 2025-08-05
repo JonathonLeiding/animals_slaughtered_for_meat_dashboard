@@ -32,26 +32,6 @@ Rather than attempting to improve OWID's excellent existing tool, the aim here i
 
 ---
 
-## 📁 Project Structure
-
-```
-
-animal-slaughter-dashboard/
-├── data/
-│   ├── raw/                    # Original downloaded CSV
-│   └── animals\_cleaned.csv     # Cleaned version used in dashboard
-├── notebooks/
-│   └── data\_cleaning.ipynb     # Preprocessing steps in Python
-├── dashboard/
-│   └── animals\_dashboard.pbix  # Power BI file
-├── README.md
-├── LICENSE
-└── .gitignore
-
-```
-
----
-
 ## 📊 Dashboard Features
 
 - 🧩 **Filters** for:
