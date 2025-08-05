@@ -1,36 +1,34 @@
-
-# 🐄 Global Meat Production Dashboard – A Power BI and Python Data Project
+# 🐄 Global Meat Production Dashboard – A Power BI + Python Rebuild of OWID Visuals
 
 ## 📌 Overview
 
-This project analyzes global data on the number of animals slaughtered for meat each year, originally published by [Our World in Data](https://ourworldindata.org/grapher/animals-slaughtered-for-meat?tab=table&time=1962..2023).
+This project replicates the **"Animals Slaughtered for Meat"** interactive dashboard from [Our World in Data (OWID)](https://ourworldindata.org/grapher/animals-slaughtered-for-meat) using **Power BI and Python**.
 
-The original online visualization, while valuable, presents a **somewhat clunky interface** for deeper analysis:
-- The **timeline slider** is unintuitive for quickly selecting a specific year or range.
-- The **data table combines regional and country-level metrics**, which can lead to misleading comparisons or duplicated aggregates.
-
-To improve usability and unlock deeper insights, I built a **refined and interactive Power BI dashboard** using a cleaned version of the source data.
+Rather than attempting to improve OWID's excellent existing tool, the aim here is to:
+- Recreate its core visual functionality within Power BI
+- Practice full-stack data handling: from sourcing and cleaning to dashboard building
+- Build an offline, customizable version of the original for exploration, resume-building, and skill demonstration
 
 ---
 
 ## 🛠 Tools & Technologies
 
-- **Python + Pandas**: Data cleaning, transformation, and formatting
-- **Jupyter Notebook**: Data exploration and preprocessing
-- **Power BI Desktop**: Visual dashboard creation and storytelling
-- **Git & GitHub**: Version control and documentation
+- **Python + Pandas** – Data cleaning and transformation
+- **Jupyter Notebook** – Data preprocessing and validation
+- **Power BI Desktop** – Data visualization and interactivity
+- **Git & GitHub** – Version control and project documentation
 
 ---
 
-## 🎯 Objectives
+## 🎯 Project Objectives
 
-- 📊 Create a **clear and filterable dashboard** to visualize trends in meat production by country and animal type
-- 🧼 **Separate countries from regional aggregates** to ensure data granularity and accuracy
-- 📈 Allow users to easily explore trends over time without dealing with cumbersome UI elements
-- 🧪 Showcase skills in **data wrangling, visualization, and dashboard building** to demonstrate readiness for roles in:
-  - **Data Analysis**
-  - **Data Engineering**
-  - **Business Intelligence (BI)**
+- 📊 Rebuild a filterable dashboard showing **yearly animal slaughter counts** by country/region and meat type
+- 🧼 Handle raw OWID data, especially **mixed entities** (countries, continents, regions) for accurate filtering and comparison
+- 🔍 Enable graph switching (table, line, bar) and interactive filtering by year, country, or animal type
+- 🧪 Showcase skills in:
+  - **Data wrangling**
+  - **Business Intelligence**
+  - **Dashboard development**
 
 ---
 
@@ -40,12 +38,12 @@ To improve usability and unlock deeper insights, I built a **refined and interac
 
 animal-slaughter-dashboard/
 ├── data/
-│   ├── raw/                      # Original downloaded data
-│   └── animals\_cleaned.csv       # Cleaned dataset used for analysis
+│   ├── raw/                    # Original downloaded CSV
+│   └── animals\_cleaned.csv     # Cleaned version used in dashboard
 ├── notebooks/
-│   └── data\_cleaning.ipynb       # Python notebook for preprocessing
+│   └── data\_cleaning.ipynb     # Preprocessing steps in Python
 ├── dashboard/
-│   └── animals\_dashboard.pbix    # Final Power BI dashboard file
+│   └── animals\_dashboard.pbix  # Power BI file
 ├── README.md
 ├── LICENSE
 └── .gitignore
@@ -56,13 +54,15 @@ animal-slaughter-dashboard/
 
 ## 📊 Dashboard Features
 
-- 🔍 **Filterable by country, year, and animal type**
-- 🌍 **Global overview** with country-level granularity
-- 🧩 Designed to **scale and adapt** as new data becomes available
-- 📉 Helps users quickly identify:
-  - Top meat-producing countries
-  - Trends in animal types over time
-  - Shifts in global meat consumption patterns
+- 🧩 **Filters** for:
+  - Country or Region Type (e.g., Country, Continent, FAO, etc.)
+  - Entity (e.g., Italy, Africa, World)
+  - Year Range
+  - Meat Type (Chicken, Pig, Duck, etc.)
+- 📈 **Graph Toggle Buttons** (Line, Bar, Table)
+- 🌍 **Region-aware ranking metrics** (Absolute & Relative Change with dynamic ranks)
+- 🏳️ **Country Flags** and stylized page layout for better storytelling
+- 🔄 Designed to **mimic the functionality** of OWID’s online tool in an offline Power BI environment
 
 ---
 
@@ -70,7 +70,7 @@ animal-slaughter-dashboard/
 
 Data from:  
 **Our World in Data – Meat and Dairy Production**  
-[https://ourworldindata.org/grapher/animals-slaughtered-for-meat](https://ourworldindata.org/grapher/animals-slaughtered-for-meat)
+🔗 [OWID Slaughtered Animals Dataset](https://ourworldindata.org/grapher/animals-slaughtered-for-meat)
 
 License:  
 [Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)
@@ -80,17 +80,15 @@ Citation:
 
 ---
 
-## 💼 Qualities this project shows
+## 💼 Skills Demonstrated
 
-This project demonstrates:
-
-- 🧹 **Data Cleaning & Engineering**: Handling messy real-world data and structuring it for meaningful analysis
-- 📈 **Business Intelligence Skills**: Creating professional-quality dashboards using Power BI
-- 🧠 **Analytical Thinking**: Identifying limitations in existing visualizations and improving them for better decision-making
-- 📦 **Version Control & Documentation**: Using GitHub to organize and present work in a collaborative, reproducible format
+- 🧹 **Data Cleaning & Transformation** – Handling unstructured global datasets
+- 🧠 **Analytical Thinking** – Building logic for country vs region rank separation
+- 📈 **Dashboard Development** – Creating a complete Power BI experience
+- 📂 **Project Structure & Git** – Clean, reusable, and version-controlled work
 
 ---
 
 ## 📬 Contact
 
-If you’re an employer, recruiter, or collaborator interested in this type of work, feel free to reach out!
+If you're a hiring manager, recruiter, or fellow data professional and want to connect, feel free to reach out via LinkedIn or GitHub.
